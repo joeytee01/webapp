@@ -2,7 +2,7 @@ const mysql = require('mysql2');
 
 // Create a connection to the database
 const db = mysql.createConnection({
-  host: 'mydb-instance.c1xufzwaz1yr.us-east-1.rds.amazonaws.com', // RDS Endpoint
+  host: 'mydb-instance-instance-1.cwsacoh3d98d.us-east-1.rds.amazonaws.com', // RDS Endpoint
   user: 'admin', // Your username
   password: 'Ahh0w2001', // Your password
   database: 'mydatabase' // Replace with your database name
