@@ -1,0 +1,19 @@
+<!-- views/edit-item.ejs -->
+<%- include('partials/header', { title: 'Edit Item' }); %> <!-- Include header here -->
+<div class="container mt-5">
+  <h1>Edit Item</h1>
+  <form action="/edit-item/<%= item.id %>" method="POST">
+    <div class="mb-3">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" class="form-control" value="<%= item.name %>" required>
+    </div>
+    <div class="mb-3">
+      <label for="description" class="form-label">Description:</label>
+      <textarea id="description" name="description" class="form-control" required><%= item.description %></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+  </form>
+  <a href="/" class="btn btn-secondary mt-3">Back to Home</a>
+</div>
+</body>
+</html>
