@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const db = require('./db'); // Import the database connection
 
 const app = express();
-const PORT = 3000;
+const PORT = 80;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
